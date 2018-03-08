@@ -1,480 +1,338 @@
-body {
-  font-family: 'Lato';
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  font-family: 'Montserrat';
-}
-
-.comparison {
-    width: 2000px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 100%;
-}
-
-.logo1 {
-    width: 180px;
-    max-width: 100%;
-}
-
-hr.star-light,
-hr.star-dark {
-  max-width: 15rem;
-  padding: 0;
-  text-align: center;
-  border: none;
-  border-top: solid 0.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-hr.star-light:after,
-hr.star-dark:after {
-  position: relative;
-  top: -.8em;
-  display: inline-block;
-  padding: 0 0.25em;
-  content: '\f005';
-  font-family: FontAwesome;
-  font-size: 2em;
-}
-
-hr.star-light {
-  border-color: #fff;
-}
-
-hr.star-light:after {
-  color: #fff;
-  background-color: #070011;
-}
-
-hr.star-dark {
-  border-color: #070011;
-}
-
-hr.star-dark:after {
-  color: #070011;
-  background-color: white;
-}
-
-section {
-  padding: 6rem 0;
-  background: #070011;
-}
-
-section h2 {
-  font-size: 2.25rem;
-  line-height: 2rem;
-}
-
-@media (min-width: 992px) {
-  section h2 {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-}
-
-.btn-xl {
-  padding: 1rem 1.75rem;
-  font-size: 1.25rem;
-}
-
-.btn-social {
-  width: 3.25rem;
-  height: 3.25rem;
-  font-size: 1.25rem;
-  line-height: 2rem;
-}
-
-.scroll-to-top {
-  z-index: 1042;
-  right: 1rem;
-  bottom: 1rem;
-  display: none;
-}
-
-.scroll-to-top a {
-  width: 3.5rem;
-  height: 3.5rem;
-  background-color: rgba(33, 37, 41, 0.5);
-  line-height: 3.1rem;
-}
-
-#mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  font-weight: 700;
-  font-family: 'Montserrat';
-}
-
-#mainNav .navbar-brand {
-  color: #fff;
-}
-
-#mainNav .navbar-nav {
-  margin-top: 1rem;
-  letter-spacing: 0.0625rem;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #070011;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
-}
-
-#mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #070011;
-}
-
-#mainNav .navbar-toggler {
-  font-size: 80%;
-  padding: 0.8rem;
-}
-
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-  }
-  #mainNav .navbar-brand {
-    font-size: 2em;
-    -webkit-transition: font-size 0.3s;
-    -moz-transition: font-size 0.3s;
-    transition: font-size 0.3s;
-  }
-  #mainNav .navbar-nav {
-    margin-top: 0;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #070011;
-  }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: #070011;
-  }
-  #mainNav.navbar-shrink {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.5em;
-  }
-}
-
-header.masthead {
-  padding-top: calc(6rem + 72px);
-  padding-bottom: 6rem;
-}
-
-header.masthead h1 {
-  font-size: 3rem;
-  line-height: 3rem;
-}
-
-header.masthead h2 {
-  font-size: 1.3rem;
-  font-family: 'Lato';
-}
-
-@media (min-width: 992px) {
-  header.masthead {
-    padding-top: calc(6rem + 106px);
-    padding-bottom: 6rem;
-  }
-  header.masthead h1 {
-    font-size: 4.75em;
-    line-height: 4rem;
-  }
-  header.masthead h2 {
-    font-size: 1.75em;
-  }
-}
-
-.portfolio {
-  margin-bottom: -15px;
-}
-
-.portfolio .portfolio-item {
-  position: relative;
-  display: block;
-  max-width: 25rem;
-  margin-bottom: 15px;
-}
-
-.portfolio .portfolio-item .portfolio-item-caption {
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  opacity: 0;
-  background-color: rgba(24, 188, 156, 0.9);
-}
-
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
-}
-
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-  font-size: 1.5rem;
-}
-
-@media (min-width: 576px) {
-  .portfolio {
-    margin-bottom: -30px;
-  }
-  .portfolio .portfolio-item {
-    margin-bottom: 30px;
-  }
-}
-
-.portfolio-modal .portfolio-modal-dialog {
-  padding: 3rem 1rem;
-  min-height: calc(100vh - 2rem);
-  margin: 1rem calc(1rem - 8px);
-  position: relative;
-  z-index: 2;
-  -moz-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.5);
-}
-
-.portfolio-modal .portfolio-modal-dialog .close-button {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-}
-
-.portfolio-modal .portfolio-modal-dialog .close-button i {
-  line-height: 38px;
-}
-
-.portfolio-modal .portfolio-modal-dialog h2 {
-  font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-  .portfolio-modal .portfolio-modal-dialog {
-    min-height: 100vh;
-    padding: 5rem;
-    margin: 3rem calc(3rem - 8px);
-  }
-  .portfolio-modal .portfolio-modal-dialog h2 {
-    font-size: 3rem;
-  }
-}
-
-.floating-label-form-group {
-  position: relative;
-  border-bottom: 1px solid #e9ecef;
-}
-
-.floating-label-form-group input,
-.floating-label-form-group textarea {
-  font-size: 1.5em;
-  position: relative;
-  z-index: 1;
-  padding-right: 0;
-  padding-left: 0;
-  resize: none;
-  border: none;
-  border-radius: 0;
-  background: none;
-  box-shadow: none !important;
-}
-
-.floating-label-form-group label {
-  font-size: 0.85em;
-  line-height: 1.764705882em;
-  position: relative;
-  z-index: 0;
-  top: 2em;
-  display: block;
-  margin: 0;
-  -webkit-transition: top 0.3s ease, opacity 0.3s ease;
-  -moz-transition: top 0.3s ease, opacity 0.3s ease;
-  -ms-transition: top 0.3s ease, opacity 0.3s ease;
-  transition: top 0.3s ease, opacity 0.3s ease;
-  vertical-align: middle;
-  vertical-align: baseline;
-  opacity: 0;
-}
-
-.floating-label-form-group:not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #e9ecef;
-}
-
-.floating-label-form-group-with-value label {
-  top: 0;
-  opacity: 1;
-}
-
-.floating-label-form-group-with-focus label {
-  color: #070011;
-}
-
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #e9ecef;
-}
-
-.footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #070011;
-  color: #fff;
-}
-
-.copyright {
-  background-color: #070011;
-}
-
-a {
-  color: #fff;
-}
-
-a:focus, a:hover, a:active {
-  color: #128f76;
-}
-
-.btn {
-  border-width: 2px;
-}
-
-.bg-primary {
-  background-color: #070011!important;
-}
-
-.bg-secondary {
-  background-color: #070011!important;
-}
-
-.text-primary {
-  color: #070011!important;
-}
-
-.text-secondary {
-  color: #070011!important;
-}
-
-.btn-primary {
-  background-color: #070011;
-  border-color: #070011;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #128f76;
-  border-color: #128f76;
-}
-
-.btn-secondary {
-  background-color: #070011;
-  border-color: #070011;
-}
-
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #070011;
-  border-color: #070011;
-}
-
-
-.sliderlogo {
-    width: 200px;
-    max-width: 100%;
-    margin-bottom: 30px;
-}
-
-
-header.masthead h2 {
-    font-size: 13px;
-    font-family: lato;
-    letter-spacing: 0px;
-    margin-top: 23px;
-    color: #999;
-}
-
-
-header.masthead h1 {
-    font-size: 15px;
-    line-height: 4rem;
-    font-family: DIN;
-    font-weight: lighter;
-    letter-spacing: 5px;
-    color: #fff;
-}
-
-
-
-.nav-link.py-3.px-0.px-lg-3.rounded.js-scroll-trigger {
-    font-family: DIN;
-    font-size: 12px;
-    font-weight: lighter;
-    padding: 20px;
-    color: #999 !important;
-}
-
-
-.text-white {
-    color: #999 !important;
-}
-
-
-a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
-    background-color: #070011 !important;
-}
-
-
-
-.textbox {
-    text-align: center;
-    width: 800px;
-    color: #999;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-}
-
-.text-secondary {
-    color: #fff !important;
-    font-size: 15px;
-    font-family: DIN;
-    font-weight: lighter;
-    letter-spacing: 2px;
-}
-
-
-
-
-.borderline {
-    line-height: 1px;
-    background: white;
-    width: 23px;
-    margin-top: 30px;
-    margin-bottom: 45px;
-}
-
-.footeryo {
-    text-align: center;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #999;
-    max-width: 100%;
-    padding: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bitcoin Hush - BTCH</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/bitcoinhush.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="logo1" src="img/logo1.png" alt="Bitcoin Hush"></a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#compare">Compare</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#airdrop">Airdrop</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#wallet">Wallet</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Exchanges">Exchanges</a>
+            </li>
+			<li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#Contact">Contact</a>
+            </li>	
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="http://www.btch.host" target="_blank">Explorer</a>
+            </li>			
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="https://github.com/bitcoinhush/bitcoinhush/blob/master/whitepaper/btch.pdf" target="_blank">Whitepaper</a>
+            </li>			
+          
+           <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#roadmap">Roadmap</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="sliderlogo" src="img/sliderlogo.png" alt="">
+        <h1 class="text-uppercase mb-0">Bitcoin Hush</h1>
+       
+        <h2 class="font-weight-light mb-0">The First Ever Four-Way Airdrop + First Bitcoin Airdrop on a Komodo Asset Chain</h2>
+      </div>
+    </header>
+
+
+  <!-- Comparison -->
+    <section class="portfolio" id="compare">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Coin Comparison</h2>
+    <hr class="borderline">
+<div class="textboxlanding">
+
+<img class="comparison" src="img/BTCH_COMPARE.png" alt="">
+</div>
+
+ </section>
+
+
+
+
+
+    <!-- Air drop Grid Section -->
+    <section class="portfolio" id="airdrop">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">How Do I Get Airdrop?</h2>
+    <hr class="borderline">
+<div class="textbox">
+
+<p>You must HODL your private key (not on an exchange!) in a transparent address. Since only HUSH has shielded addresses in this airdrop, HUSH HODLers with value inside of shielded zaddrs must choose to migrate it to taddrs before the snapshot date or simply enjoy their freedom via the zkSNARKs that protect their address balances.</p>
+
+<p>A block height closest to (but not later than) 12pm NOON UTC on Feb 1st 2018</p>
+
+<p>For each chain will be chosen at the “UTXO migration set”, make sure to HODL your coins until then. Unconfirmed transactions in flight WILL NOT BE COUNTED. The mempool will be ignored!!!!</p>
+
+    <p>For each 1 HUSH, you will get 1 BTCH.</p>
+   <p> For each 1 SUPERNET/Unity, you will get 1 BTCH.</p>
+    <p>For each 1 DEX, you will get 1 BTCH.</p>
+    <p>For each 1 BTC, you will get 1 BTCH.</p>
+
+<p>For each of any other Bitcoin fork, you get nothing.</p>
+
+</div>
+
+ </section>
+
+
+
+    <!-- About Section -->
+       <section class="portfolio" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">The BTCH Difference</h2>
+    <hr class="borderline">
+<div class="textbox">
+
+<p>What makes BTCH different than all the other BTC forks and things?</p>
+
+<p>BTCH is not something that has ever existed before, it is not a chain split nor code fork of HUSH, nor ZEC, nor BTC, it is a KMD asset chain with imported UTXO dataset.
+
+<p>BTCH takes the value from four different blockchains (HUSH,SUPERNET,DEX,BTC), and then dumps it onto a host chain Komodo (KMD). It does not fork from KMD, nor does it fork from BTC or HUSH. It is technically NOT A FORK, but a merged airdrop.
+
+<p>So BTCH is actually a Komodo asset chain with all the money from four other different blockchains, mixed into one big HODLer tossed salad. Also, BTCH is protected by the full hashpower of Bitcoin because Komodo has delayed Proof-Of-Work (dPOW) which essentially syncs the KMD blockchain to the BTC blockchain occasionally. This means that you must have enough hash power to mess with BTC itself to mess with KMD OR a KMD asset chain.
+
+  <hr class="borderline">
+<p><h2 class="text-center text-uppercase text-secondary mb-0">BTCH Specs</h2></p>
+  <hr class="borderline">
+<p>
+Total Supply: 21,000,000 coins, like Satoshi intended.</p>
+
+<p>Sustainable development?</p>
+
+<p>Yes, there will be a roughly 150,000 BTCH development fund managed by jl777 to fund ongoing needs of the community. The exact amount cannot be known until the costs of launching the network are known and what our "dust level" means for the snapshot data.</p>
+
+<p>What will you do with Satoshi’s Coins?
+
+<p>We have no plan to steal Satoshi’s coins like other coins, that seems disrepectful.</p>
+</p>
+</div>
+
+ </section>
+
+    <!-- About Wallet -->
+       <section class="portfolio" id="wallet">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Wallet</h2>
+    <hr class="borderline">
+<div class="textbox">
+
+<p>Wallet Support?</p>
+
+<p>          BTCH is supported in the latest <a href="https://komodoplatform.com/en/downloads" wrc_done="true">Agama</a><span class="textlink"></span> wallet, which integrates with BarterDEX.</p>
+
+
+        
+
+</div>
+
+ </section>
+
+
+
+
+
+     <!-- About Wallet -->
+       <section class="portfolio" id="Exchanges">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Exchanges</h2>
+    <hr class="borderline">
+<div class="textbox">
+
+The first exchange to support BTCH will be BarterDEX, atomic swaps have already been done with KMD and BTCH. Others will follow later.
+
+You can also buy + sell BTCH on <a href="https://coinexchange.io">Coinexchange.io</a>
+
+</div>
+
+ </section>
+
+
+
+
+        <section class="portfolio" id="Contact">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Contact</h2>
+    <hr class="borderline">
+<div class="textbox">
+
+          <p>How can I learn more?</p>
+
+<p>Join our friendly and welcoming <a href="https://btchush.org/discord" target="_blank">Discord</a> and follow us on <a href="https://btchush.org/twitter" target="_blank">Twitter</a> to learn more.</p>
+
+<p>Check <a href="https://btchush.org/reddit" target="_blank">Reddit</a> and <a href="https://btchush.org/bitcointalk" target="_blank">Bitcointalk</a> for the latest announcements.</p>
+
+</div>
+
+ </section>
+
+
+
+
+
+
+        <section class="portfolio" id="roadmap">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Contact</h2>
+    <hr class="borderline">
+<div class="textbox">
+
+          <p>How can I learn more?</p>
+          
+    
+<!-- The Timeline -->
+
+<ul class="timeline">
+
+	<!-- Item 1 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span class="flag">Pre-Release Whitepaper</span>
+				<span class="time-wrapper"><span class="time">2013 - present</span></span>
+			</div>
+			<div class="desc">Completed</div>
+		</div>
+	</li>
+  
+	<!-- Item 2 -->
+	<li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<span class="flag">Full White & Litepaper</span>
+				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+			</div>
+			<div class="desc">Pending</div>
+		</div>
+	</li>
+
+	<!-- Item 3 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span class="flag">Incorporate Hush-NG Support</span>
+				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+			</div>
+			<div class="desc">Pending</div>
+		</div>
+	</li>
+	<!-- Item 4 -->
+	<li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<span class="flag">BTCH Mobile Wallet</span>
+				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+			</div>
+			<div class="desc">Pending</div>
+		</div>
+	</li>
+  
+</ul>
+
+
+<!-- The Timeline -->
+    
+    
+    
+ </section>
+
+
+
+          
+          
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+     
+         <div class="footeryo">
+This is an educational project and the more you learn, the better off the entire Bitcoin community will be.</div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        Bitcoin Hush - Community Driven
+		<div class="contact-copyright">
+			<p><small>Copyright © 2017-2018 Hush. All rights reserved.</small></p>
+		</div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+  </body>
+
+</html>
